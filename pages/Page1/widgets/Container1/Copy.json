@@ -16,7 +16,7 @@
     }
   ],
   "iconName": "duplicate",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isVisible": true,
   "key": "yyqxrv5wdt",
