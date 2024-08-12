@@ -1,0 +1,52 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "LEFT",
+  "animateLoading": true,
+  "bottomRow": 49,
+  "boxShadow": "none",
+  "defaultSwitchState": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onChange"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "mu4w8w7i2h",
+  "label": "GIF",
+  "labelPosition": "Left",
+  "leftColumn": 3,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 49,
+  "mobileLeftColumn": 3,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 45,
+  "needsErrorInfo": false,
+  "onChange": "{{JSObject1.toggleMultiSelectVisibility();}}",
+  "originalBottomRow": 49,
+  "originalTopRow": 45,
+  "parentColumnSpace": 8.7763671875,
+  "parentId": "371kbn3crc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 14,
+  "topRow": 45,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "component-xxji68ibf7",
+  "widgetName": "Switch1"
+}
