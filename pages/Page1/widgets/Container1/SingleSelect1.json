@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 49,
+  "bottomRow": 47,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -59,7 +59,7 @@
   "rightColumn": 61,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"code\": \"Angry\",\n    \"name\": \"ANGRY\"\n  },\n  {\n    \"code\": \"Baby\",\n    \"name\": \"BABY\"\n  },\n  {\n    \"code\": \"Bed\",\n    \"name\": \"BED\"\n  },\n  {\n    \"code\": \"Bengal\",\n    \"name\": \"BENGAL\"\n  },\n  {\n    \"code\": \"Black\",\n    \"name\": \"BLACK\"\n  },\n  {\n    \"code\": \"Cat\",\n    \"name\": \"CAT\"\n  },\n  {\n    \"code\": \"Christmas\",\n    \"name\": \"CHRISTMAS\"\n  },\n  {\n    \"code\": \"Cute\",\n    \"name\": \"CUTE\"\n  },\n  {\n    \"code\": \"Dark\",\n    \"name\": \"DARK\"\n  },\n  {\n    \"code\": \"Female\",\n    \"name\": \"FEMALE\"\n  },\n  {\n    \"code\": \"Fluffy\",\n    \"name\": \"FLUFFY\"\n  },\n  {\n    \"code\": \"Friends\",\n    \"name\": \"FRIENDS\"\n  },\n  {\n    \"code\": \"Gray\",\n    \"name\": \"GRAY\"\n  },\n  {\n    \"code\": \"GreenEyes\",\n    \"name\": \"GREENEYES\"\n  },\n  {\n    \"code\": \"Halloween\",\n    \"name\": \"HALLOWEEN\"\n  },\n  {\n    \"code\": \"Hiding\",\n    \"name\": \"HIDING\"\n  },\n  {\n    \"code\": \"If-fits-I-sits\",\n    \"name\": \"IFFITSISITS\"\n  },\n  {\n    \"code\": \"Maine Coon\",\n    \"name\": \"MAINECOON\"\n  },\n  {\n    \"code\": \"Male\",\n    \"name\": \"MALE\"\n  },\n  {\n    \"code\": \"Norwegian Forest Cat\",\n    \"name\": \"NORWEGIANFORESTCAT\"\n  },\n  {\n    \"code\": \"Orange\",\n    \"name\": \"ORANGE\"\n  },\n  {\n    \"code\": \"Peekaboo\",\n    \"name\": \"PEEKABOO\"\n  },\n  {\n    \"code\": \"Ragdoll\",\n    \"name\": \"RAGDOLL\"\n  },\n  {\n    \"code\": \"Relaxed\",\n    \"name\": \"RELAXED\"\n  },\n  {\n    \"code\": \"Sad\",\n    \"name\": \"SAD\"\n  },\n  {\n    \"code\": \"Screaming\",\n    \"name\": \"SCREAMING\"\n  },\n  {\n    \"code\": \"Sleeping\",\n    \"name\": \"SLEEPING\"\n  },\n  {\n    \"code\": \"Sleepy\",\n    \"name\": \"SLEEPY\"\n  },\n  {\n    \"code\": \"Tabby\",\n    \"name\": \"TABBY\"\n  },\n  {\n    \"code\": \"Tuxedo\",\n    \"name\": \"TUXEDO\"\n  },\n  {\n    \"code\": \"TwoCats\",\n    \"name\": \"TWOCATS\"\n  },\n  {\n    \"code\": \"Wet\",\n    \"name\": \"WET\"\n  },\n  {\n    \"code\": \"White\",\n    \"name\": \"WHITE\"\n  },\n  {\n    \"code\": \"X-MAS\",\n    \"name\": \"XMAS\"\n  },\n  {\n    \"code\": \"cuddle\",\n    \"name\": \"CUDDLE\"\n  },\n  {\n    \"code\": \"fluffy\",\n    \"name\": \"FLUFFY\"\n  },\n  {\n    \"code\": \"funny\",\n    \"name\": \"FUNNY\"\n  },\n  {\n    \"code\": \"kitten\",\n    \"name\": \"KITTEN\"\n  },\n  {\n    \"code\": \"love\",\n    \"name\": \"LOVE\"\n  },\n  {\n    \"code\": \"playful\",\n    \"name\": \"PLAYFUL\"\n  },\n  {\n    \"code\": \"sleepy cat\",\n    \"name\": \"SLEEPYCAT\"\n  }\n]\n",
-  "topRow": 45,
+  "topRow": 43,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "component-j7ccsh6ckd",
