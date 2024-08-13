@@ -23,14 +23,14 @@
   "isLoading": false,
   "isVisible": true,
   "key": "vv49xft7c5",
-  "leftColumn": 57,
+  "leftColumn": 54,
   "minWidth": 50,
   "mobileBottomRow": 39,
   "mobileLeftColumn": 56,
   "mobileRightColumn": 60,
   "mobileTopRow": 35,
   "needsErrorInfo": false,
-  "onClick": "{{copyToClipboard('/');}}",
+  "onClick": "{{copyToClipboard(Image1.image).then(() => {\n  showAlert('Copied!', 'success');\n});}}",
   "parentColumnSpace": 5.625,
   "parentId": "371kbn3crc",
   "parentRowSpace": 10,
@@ -41,5 +41,5 @@
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "7a7rk6qy9d",
-  "widgetName": "Share_Screenshot"
+  "widgetName": "Copy_Image_URL"
 }

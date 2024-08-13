@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66b3bfda7e4cf637deac2221_6ee91f5c-faf5-4692-a88a-f9d9a9d2bc20",
-  "id": "Page1_JSObject1.fetchHttpErrorImage",
+  "gitSyncId": "66b3bfda7e4cf637deac2221_95d650df-a2be-4908-ae7e-36a0dd0d69df",
+  "id": "Page1_JSObject1.copyImageUrl",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.fetchHttpErrorImage",
-    "name": "fetchHttpErrorImage",
+    "fullyQualifiedName": "JSObject1.copyImageUrl",
+    "name": "copyImageUrl",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

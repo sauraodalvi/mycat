@@ -18,7 +18,7 @@ export default {
     } else if (selectedPet === 'http') {
       endpoint = `https://http.cat/${selectedHttpCode}`; // Fetch image based on HTTP error code
     } else {
-      console.error("Invalid pet selected!");
+      console.error("Invalid selection!");
       return;
     }
 
@@ -52,6 +52,18 @@ export default {
       .catch(error => {
         console.error("Error fetching image:", error);
         Image1.setImage(''); // Clear image on error
+      });
+  },
+
+  // Copy the image URL to the clipboard
+  copyImageUrl() {
+    const imageUrl = Image1.image; // Get the current image URL
+    navigator.clipboard.writeText(imageUrl) // Copy to clipboard
+      .then(() => {
+        console.log('Image URL copied to clipboard');
+      })
+      .catch(err => {
+        console.error('Failed to copy image URL: ', err);
       });
   },
 
@@ -179,38 +191,5 @@ export default {
     } else if (buttonType === 'fox') {
       this.fetchFoxImage(); // Call the new fox image function
     }
-  },
-
-  // Fetch image based on selected HTTP error code
-  fetchHttpErrorImage() {
-    console.log("Fetching HTTP error image..."); // Debug log
-    Image2.setImage(''); // Clear previous image before fetching a new one
-
-    const selectedHttpCode = Select2.selectedOptionValue; // Get selected HTTP code
-    const endpoint = `https://http.cat/${selectedHttpCode}`; // HTTP error image API
-
-    fetch(endpoint)
-      .then(response => {
-        if (response.ok) {
-          Image2.setImage(endpoint); // Set the image source for HTTP error
-        } else {
-          throw new Error(`Failed to fetch HTTP error image: ${response.statusText}`);
-        }
-      })
-      .catch(error => {
-        console.error("Error fetching HTTP error image:", error);
-        Image2.setImage(''); // Clear image on error
-      });
-  },
-
-  // Handle changes in Select1 (Dev Mode)
-  handlePetChange() {
-    // Enable Select2 when a pet is selected
-    Select2.setDisabled(Select1.selectedOptionValue === '');
-  },
-
-  // Handle changes in Select2 (Dev Mode)
-  handleHttpErrorChange() {
-    this.fetchHttpErrorImage(); // Call function to fetch HTTP error image
   }
 };
