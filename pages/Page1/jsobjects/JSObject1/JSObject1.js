@@ -1,75 +1,77 @@
 export default {
   fetchCatImage() {
-    console.log("Button clicked, fetching cat image..."); // Debug log
+    console.log("Fetching cat image..."); // Debug log
     Image1.setImage(''); // Clear previous image before fetching a new one
 
-    try {
-      // Get the selected option from the SingleSelect1 widget
-      const selectedTag = SingleSelect1.selectedOptionValue; // Ensure this is the correct property
-      console.log("Selected tag:", selectedTag); // Debug log
-      
-      // Get the input value from Input1
-      const inputText = Input1.text; // Assuming Input1 is a text input widget
-      console.log("Input text:", inputText); // Debug log
+    // API endpoint for fetching a random cat image
+    const endpoint = 'https://cataas.com/cat'; // Changed to fetch only images
 
-      // Determine the endpoint based on Switch1 state
-      let endpoint;
-      if (Switch1.isSwitchedOn) { // Check if the switch is on for GIFs
-        // Default GIF URL if no tags or input text
-        endpoint = selectedTag || inputText ? 
-          `https://cataas.com/cat/gif/says/${inputText}?fontColor=orange&fontSize=20&tags=${selectedTag}` :
-          `https://cataas.com/cat/gif`; // Default GIF URL
-      } else { // Switch is off for images
-        // Default image URL if no tags or input text
-        endpoint = selectedTag || inputText ? 
-          `https://cataas.com/cat/${selectedTag}/says/${inputText}` :
-          `https://cataas.com/cat`; // Default image URL
-      }
-
-      // Append a timestamp only if necessary
-      const finalEndpoint = endpoint + (endpoint.includes('?') ? '&' : '?') + `_=${new Date().getTime()}`;
-
-      console.log("Fetching from endpoint:", finalEndpoint); // Debug log
-
-      // Fetch the content from the constructed URL
-      fetch(finalEndpoint)
-        .then(response => {
-          console.log("Response status:", response.status); // Debug log
-          if (response.ok) {
-            // Set the image directly from the endpoint
-            Image1.setImage(finalEndpoint); // Use the final endpoint directly for the image source
-          } else {
-            throw new Error(`Failed to fetch content: ${response.statusText}`);
-          }
-        })
-        .catch(error => {
-          console.error("Error fetching content:", error);
-          // Clear image on error
-          Image1.setImage(''); // Use setImage method
-        });
-    } catch (error) {
-      console.error("Error fetching content:", error);
-      // Clear image on error
-      Image1.setImage(''); // Use setImage method
-    }
+    // Fetch the cat image
+    fetch(endpoint)
+      .then(response => {
+        if (response.ok) {
+          return response.blob(); // Convert response to blob
+        } else {
+          throw new Error(`Failed to fetch cat image: ${response.statusText}`);
+        }
+      })
+      .then(imageBlob => {
+        const imageObjectURL = URL.createObjectURL(imageBlob);
+        Image1.setImage(imageObjectURL); // Set the image source
+      })
+      .catch(error => {
+        console.error("Error fetching cat image:", error);
+        Image1.setImage(''); // Clear image on error
+      });
   },
 
-  copyImageUrl() {
-    const imageUrl = Image1.image; // Get the currently displayed image URL
-    if (!imageUrl) {
-      showAlert('No image to copy!', 'error'); // Alert if no image is displayed
-      return;
-    }
+  fetchDogImage() {
+    console.log("Fetching dog image..."); // Debug log
+    Image1.setImage(''); // Clear previous image before fetching a new one
 
-    copyToClipboard(imageUrl) // Use Appsmith's built-in function to copy to clipboard
-      .then(() => {
-        console.log('Image URL copied to clipboard:', imageUrl);
-        // Show a simple success message to the user
-        showAlert('Image copied', 'success'); // Updated message
+    // API endpoint for fetching a random dog image
+    const endpoint = 'https://dog.ceo/api/breeds/image/random';
+
+    // Fetch the dog image
+    fetch(endpoint)
+      .then(response => {
+        if (response.ok) {
+          return response.json(); // Parse JSON response
+        } else {
+          throw new Error(`Failed to fetch dog image: ${response.statusText}`);
+        }
       })
-      .catch(err => {
-        console.error('Failed to copy image URL:', err);
-        showAlert('Failed to copy image URL', 'error');
+      .then(data => {
+        const dogImageUrl = data.message; // Get the image URL from the response
+        Image1.setImage(dogImageUrl); // Set the image source
+      })
+      .catch(error => {
+        console.error("Error fetching dog image:", error);
+        Image1.setImage(''); // Clear image on error
       });
+  },
+
+  captureScreenshot() {
+    // Use html2canvas to take a screenshot of the specified element
+    html2canvas(document.querySelector("#elementToCapture")).then(canvas => {
+      const imgData = canvas.toDataURL("image/png");
+      this.shareOnSocialMedia(imgData); // Call the share function with the image data
+    });
+  },
+
+  shareOnSocialMedia(imgData) {
+    // Construct the social media sharing URL with the image data
+    const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(imgData)}`;
+    // Open the sharing URL in a new window
+    window.open(shareUrl, '_blank');
+  },
+
+  handleButtonClick(buttonType) {
+    // Determine which button was clicked and fetch the corresponding image
+    if (buttonType === 'cat') {
+      this.fetchCatImage();
+    } else if (buttonType === 'dog') {
+      this.fetchDogImage();
+    }
   }
 };

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66b3bfda7e4cf637deac2221_3120cca2-5e37-4150-a04f-bed7e8367b9b",
-  "id": "Page1_JSObject1.copyImageUrl",
+  "gitSyncId": "66b3bfda7e4cf637deac2221_8ffcc9bd-4610-44f8-bdab-ec9498fded10",
+  "id": "Page1_JSObject1.captureScreenshot",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.copyImageUrl",
-    "name": "copyImageUrl",
+    "fullyQualifiedName": "JSObject1.captureScreenshot",
+    "name": "captureScreenshot",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

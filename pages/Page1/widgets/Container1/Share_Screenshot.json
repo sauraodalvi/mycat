@@ -1,0 +1,45 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 39,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "send-message",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vv49xft7c5",
+  "leftColumn": 54,
+  "minWidth": 50,
+  "mobileBottomRow": 39,
+  "mobileLeftColumn": 56,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "onClick": "{{JSObject1.handleButtonClick();}}",
+  "parentColumnSpace": 5.625,
+  "parentId": "371kbn3crc",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 60,
+  "topRow": 35,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "7a7rk6qy9d",
+  "widgetName": "Share_Screenshot"
+}
