@@ -1,16 +1,12 @@
 {
-  "gitSyncId": "66b3bfda7e4cf637deac2221_a690f74a-b5e7-47b5-b77d-910bfd70895c",
-  "id": "Page1_JSObject1.handleButtonClick",
+  "gitSyncId": "66b3bfda7e4cf637deac2221_3c016767-8716-4424-bd0d-d0e85bfe7631",
+  "id": "Page1_JSObject1.fetchDuckImage",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "buttonType"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -27,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.handleButtonClick",
-    "name": "handleButtonClick",
+    "fullyQualifiedName": "JSObject1.fetchDuckImage",
+    "name": "fetchDuckImage",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

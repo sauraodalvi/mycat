@@ -1,16 +1,12 @@
 {
-  "gitSyncId": "66b3bfda7e4cf637deac2221_60bfda1a-913d-42fd-9308-0f0fb84a5342",
-  "id": "Page1_JSObject1.shareOnSocialMedia",
+  "gitSyncId": "66b3bfda7e4cf637deac2221_e282c0ec-beb5-40a7-a72a-b75fdc63934e",
+  "id": "Page1_JSObject1.handlePetSelect",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
     "actionConfiguration": {
       "encodeParamsToggle": true,
-      "jsArguments": [
-        {
-          "name": "imgData"
-        }
-      ],
+      "jsArguments": [],
       "paginationType": "NONE",
       "timeoutInMillisecond": 10000
     },
@@ -27,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.shareOnSocialMedia",
-    "name": "shareOnSocialMedia",
+    "fullyQualifiedName": "JSObject1.handlePetSelect",
+    "name": "handlePetSelect",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

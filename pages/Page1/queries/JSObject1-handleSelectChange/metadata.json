@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66b3bfda7e4cf637deac2221_93460cad-ff2e-4604-888a-acee4fdceac2",
-  "id": "Page1_JSObject1.fetchDogImage",
+  "gitSyncId": "66b3bfda7e4cf637deac2221_cca9686d-5a62-4a61-87d6-2d15ee2ea83b",
+  "id": "Page1_JSObject1.handleSelectChange",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": false,
-    "fullyQualifiedName": "JSObject1.fetchDogImage",
-    "name": "fetchDogImage",
+    "fullyQualifiedName": "JSObject1.handleSelectChange",
+    "name": "handleSelectChange",
     "pageId": "Page1",
     "userSetOnLoad": false
   }

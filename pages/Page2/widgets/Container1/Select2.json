@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "boxShadow": "none",
+  "defaultOptionValue": "GREEN",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "rgwtvcu5i0",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 44,
+  "mobileLeftColumn": 37,
+  "mobileRightColumn": 57,
+  "mobileTopRow": 37,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{JSObject1.handleSelectChange();}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 6.42431640625,
+  "parentId": "rd6ckme1qz",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"Continue\",\n    \"code\": \"100\"\n  },\n  {\n    \"name\": \"Switching Protocols\",\n    \"code\": \"101\"\n  },\n  {\n    \"name\": \"Processing\",\n    \"code\": \"102\"\n  },\n  {\n    \"name\": \"Early Hints\",\n    \"code\": \"103\"\n  },\n  {\n    \"name\": \"OK\",\n    \"code\": \"200\"\n  },\n  {\n    \"name\": \"Created\",\n    \"code\": \"201\"\n  },\n  {\n    \"name\": \"Accepted\",\n    \"code\": \"202\"\n  },\n  {\n    \"name\": \"Non-Authoritative Information\",\n    \"code\": \"203\"\n  },\n  {\n    \"name\": \"No Content\",\n    \"code\": \"204\"\n  },\n  {\n    \"name\": \"Reset Content\",\n    \"code\": \"205\"\n  },\n  {\n    \"name\": \"Partial Content\",\n    \"code\": \"206\"\n  },\n  {\n    \"name\": \"Multi-Status\",\n    \"code\": \"207\"\n  },\n  {\n    \"name\": \"Already Reported\",\n    \"code\": \"208\"\n  },\n  {\n    \"name\": \"Transformation Applied\",\n    \"code\": \"214\"\n  },\n  {\n    \"name\": \"IM Used\",\n    \"code\": \"226\"\n  },\n  {\n    \"name\": \"Multiple Choices\",\n    \"code\": \"300\"\n  },\n  {\n    \"name\": \"Moved Permanently\",\n    \"code\": \"301\"\n  },\n  {\n    \"name\": \"Found\",\n    \"code\": \"302\"\n  },\n  {\n    \"name\": \"See Other\",\n    \"code\": \"303\"\n  },\n  {\n    \"name\": \"Not Modified\",\n    \"code\": \"304\"\n  },\n  {\n    \"name\": \"Use Proxy\",\n    \"code\": \"305\"\n  },\n  {\n    \"name\": \"Temporary Redirect\",\n    \"code\": \"307\"\n  },\n  {\n    \"name\": \"Permanent Redirect\",\n    \"code\": \"308\"\n  },\n  {\n    \"name\": \"Bad Request\",\n    \"code\": \"400\"\n  },\n  {\n    \"name\": \"Unauthorized\",\n    \"code\": \"401\"\n  },\n  {\n    \"name\": \"Payment Required\",\n    \"code\": \"402\"\n  },\n  {\n    \"name\": \"Forbidden\",\n    \"code\": \"403\"\n  },\n  {\n    \"name\": \"Not Found\",\n    \"code\": \"404\"\n  },\n  {\n    \"name\": \"Method Not Allowed\",\n    \"code\": \"405\"\n  },\n  {\n    \"name\": \"Not Acceptable\",\n    \"code\": \"406\"\n  },\n  {\n    \"name\": \"Proxy Authentication Required\",\n    \"code\": \"407\"\n  },\n  {\n    \"name\": \"Request Timeout\",\n    \"code\": \"408\"\n  },\n  {\n    \"name\": \"Conflict\",\n    \"code\": \"409\"\n  },\n  {\n    \"name\": \"Gone\",\n    \"code\": \"410\"\n  },\n  {\n    \"name\": \"Length Required\",\n    \"code\": \"411\"\n  },\n  {\n    \"name\": \"Precondition Failed\",\n    \"code\": \"412\"\n  },\n  {\n    \"name\": \"Payload Too Large\",\n    \"code\": \"413\"\n  },\n  {\n    \"name\": \"Request-URI Too Long\",\n    \"code\": \"414\"\n  },\n  {\n    \"name\": \"Unsupported Media Type\",\n    \"code\": \"415\"\n  },\n  {\n    \"name\": \"Request Range Not Satisfiable\",\n    \"code\": \"416\"\n  },\n  {\n    \"name\": \"Expectation Failed\",\n    \"code\": \"417\"\n  },\n  {\n    \"name\": \"I'm a teapot\",\n    \"code\": \"418\"\n  },\n  {\n    \"name\": \"Enhance Your Calm\",\n    \"code\": \"420\"\n  },\n  {\n    \"name\": \"Misdirected Request\",\n    \"code\": \"421\"\n  },\n  {\n    \"name\": \"Unprocessable Entity\",\n    \"code\": \"422\"\n  },\n  {\n    \"name\": \"Locked\",\n    \"code\": \"423\"\n  },\n  {\n    \"name\": \"Failed Dependency\",\n    \"code\": \"424\"\n  },\n  {\n    \"name\": \"Too Early\",\n    \"code\": \"425\"\n  },\n  {\n    \"name\": \"Upgrade Required\",\n    \"code\": \"426\"\n  },\n  {\n    \"name\": \"Precondition Required\",\n    \"code\": \"428\"\n  },\n  {\n    \"name\": \"Too Many Requests\",\n    \"code\": \"429\"\n  },\n  {\n    \"name\": \"Request Header Fields Too Large\",\n    \"code\": \"431\"\n  },\n  {\n    \"name\": \"No Response\",\n    \"code\": \"444\"\n  },\n  {\n    \"name\": \"Blocked by Windows Parental Controls\",\n    \"code\": \"450\"\n  },\n  {\n    \"name\": \"Unavailable For Legal Reasons\",\n    \"code\": \"451\"\n  },\n  {\n    \"name\": \"HTTP Request Sent to HTTPS Port\",\n    \"code\": \"497\"\n  },\n  {\n    \"name\": \"Token expired/invalid\",\n    \"code\": \"498\"\n  },\n  {\n    \"name\": \"Client Closed Request\",\n    \"code\": \"499\"\n  },\n  {\n    \"name\": \"Internal Server Error\",\n    \"code\": \"500\"\n  },\n  {\n    \"name\": \"Not Implemented\",\n    \"code\": \"501\"\n  },\n  {\n    \"name\": \"Bad Gateway\",\n    \"code\": \"502\"\n  },\n  {\n    \"name\": \"Service Unavailable\",\n    \"code\": \"503\"\n  },\n  {\n    \"name\": \"Gateway Timeout\",\n    \"code\": \"504\"\n  },\n  {\n    \"name\": \"Variant Also Negotiates\",\n    \"code\": \"506\"\n  },\n  {\n    \"name\": \"Insufficient Storage\",\n    \"code\": \"507\"\n  },\n  {\n    \"name\": \"Loop Detected\",\n    \"code\": \"508\"\n  },\n  {\n    \"name\": \"Bandwidth Limit Exceeded\",\n    \"code\": \"509\"\n  },\n  {\n    \"name\": \"Not Extended\",\n    \"code\": \"510\"\n  },\n  {\n    \"name\": \"Network Authentication Required\",\n    \"code\": \"511\"\n  },\n  {\n    \"name\": \"Web Server Is Down\",\n    \"code\": \"521\"\n  },\n  {\n    \"name\": \"Connection Timed Out\",\n    \"code\": \"522\"\n  },\n  {\n    \"name\": \"Origin Is Unreachable\",\n    \"code\": \"523\"\n  },\n  {\n    \"name\": \"SSL Handshake Failed\",\n    \"code\": \"525\"\n  },\n  {\n    \"name\": \"Site Frozen\",\n    \"code\": \"530\"\n  },\n  {\n    \"name\": \"Network Connect Timeout Error\",\n    \"code\": \"599\"\n  }\n]\n",
+  "topRow": 31,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "wgwxddltew",
+  "widgetName": "Select2"
+}

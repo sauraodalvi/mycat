@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 49,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -18,6 +18,9 @@
     },
     {
       "key": "groupButtons.groupButtonmu4zk9js55.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton04p913gm3x.buttonColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -26,9 +29,28 @@
     },
     {
       "key": "groupButtons.groupButtonmu4zk9js55.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton04p913gm3x.onClick"
     }
   ],
   "groupButtons": {
+    "groupButton04p913gm3x": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButton04p913gm3x",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Fox",
+      "menuItems": {},
+      "onClick": "{{JSObject1.fetchFoxImage();}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "ww1snbpoty"
+    },
     "groupButton1": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
@@ -36,7 +58,7 @@
       "index": 0,
       "isDisabled": false,
       "isVisible": true,
-      "label": "Generate Cat",
+      "label": "Cat",
       "menuItems": {},
       "onClick": "{{JSObject1.fetchCatImage();}}",
       "placement": "CENTER",
@@ -51,7 +73,7 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Generate Dog",
+      "label": "Dog",
       "menuItems": {},
       "onClick": "{{JSObject1.fetchDogImage();}}",
       "placement": "CENTER",
@@ -63,7 +85,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "gffniipqev",
-  "leftColumn": 3,
+  "leftColumn": 0,
   "minWidth": 450,
   "mobileBottomRow": 55,
   "mobileLeftColumn": 18,
@@ -78,8 +100,8 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
-  "topRow": 39,
+  "rightColumn": 64,
+  "topRow": 45,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "g1zjzaxxkg",
